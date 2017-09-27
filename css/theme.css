@@ -24,6 +24,15 @@
     height: auto;
 }
 
+.quote {
+	font-family: Georgia,"Times New Roman",san-serif;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.quote-box {
+	padding: 20px 50px 10px 50px;
+}
 
 
 body {
