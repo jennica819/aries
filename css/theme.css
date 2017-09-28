@@ -270,6 +270,12 @@ a:hover,a:focus {
 	clear:both;
 }
 
+.hr-line {
+	width:50px;
+	border-top:3px solid #606365;
+	margin-bottom:30px;
+}
+
 /*
 .container {
 	width: 100%;

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Jennica Princess HAHA</title>
+<!-- Bootstrap Core CSS -->
+<link href="https://jennica819.github.io/aries/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="https://jennica819.github.io/aries/css/theme.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="https://jennica819.github.io/aries/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+		<i class="fa fa-bars"></i>
+		</button>
+		<a class="navbar-brand page-scroll" href="index.html">
+		ARIES </a>
+	</div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+		<ul class="nav navbar-nav">
+			<li>
+			<a href="index.html">Home</a>
+			</li>
+			<li>
+			<a href="portfolio-item.html">ABOUT</a>
+			</li>
+			<li>
+			<a href="page-sample.html">ART</a>
+			</li>
+			<li>
+			<a href="page-sample.html">PHOTOGRAPHY</a>
+			</li>
+			<li>
+			<a href="page-sample.html">PLACES</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Intro Header -->
+<header class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h1 class="brand-heading">Page Sample</h1>
+				<p class="intro-text">
+					Use it for any kind of content
+				</p>
+				<a href="#page-sample" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+
+<!-- Page Sample Section -->
+<section id="page-sample">
+<div class="container content-section text-left post-top">
+	<div class="row">
+		
+		<!--Post-->
+		
+      
+              
+                
+       <!--Post-->
+       {block:Posts}
+       
+       
+       {block:Text}
+		<div class="col-lg-8 col-lg-offset-2">
+		    <h2 class="text-center post-title">{block:Title}<a href="{Permalink}">{Title}</a>{/block:Title}</h2>
+		        <p class="text-center post-date">{block:Date} {Month} {DayOfMonth}, {Year}{/block:Date}</p>
+		            <hr style="width:50px;border-top:3px solid #606365;margin-bottom:30px;">
+            		
+              
+            			<p>
+            				{Body}
+            			</p>
+            	
+            	
+			<div class="row">
+				<div class="col-md-12">
+					<div class="post-date">
+						<p style="float:left;"">10 Notes</p>
+						<p style="float:right;">Reblog</p>
+					</div>
+				</div>
+			</div>
+       </div><!--col-lg-8 end-->
+       {/block:Text}
+       
+       {block:Photo}
+		<div class="col-lg-8 col-lg-offset-2">
+    		<h2 class="text-center post-title">PHOTO</h2>
+    		        <p class="text-center post-date">{block:Date} {Month} {DayOfMonth}, {Year}{/block:Date}</p>
+    		            <hr style="width:50px;border-top:3px solid #606365;margin-bottom:30px;">
+    		        {block:HighRes}
+    		            <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+    		        {/block:HighRes}
+                    {block:Caption}
+                        <p>{Caption}<p>
+                    {/block:Caption}
+			</div>
+       </div><!--col-lg-8 end-->
+       {/block:Photo}
+       
+
+       
+       {block:Photoset}
+		<div class="col-lg-8 col-lg-offset-2">
+    		<h2 class="text-center post-title">PHOTOSET</h2>
+        		        <p class="text-center post-date">{block:Date} {Month} {DayOfMonth}, {Year}{/block:Date}</p>
+        		          <hr style="width:50px;border-top:3px solid #606365;margin-bottom:30px;">
+        		        {block:Photos}
+        		        {block:HighRes}
+        		            <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" style="margin: 0px 0px 20px 0px;"/>
+        		        {/block:HighRes}
+                        {block:Caption}
+                            <p>{Caption}<p>
+                        {/block:Caption}
+                        {/block:Photos}
+			</div>
+       </div><!--col-lg-8 end-->
+       {/block:Photoset}
+       
+       {block:Video}
+		<div class="col-lg-8 col-lg-offset-2">
+    		<h2 class="text-center post-title">VIDEO</h2>
+        		        <p class="text-center post-date">{block:Date} {Month} {DayOfMonth}, {Year}{/block:Date}</p>
+        		          <hr style="width:50px;border-top:3px solid #606365;margin-bottom:30px;">
+        		          
+        		      <div style="max-width: 100%">
+        		        <center>
+        		        {Video-700}{block:Caption}
+                            <p>{Caption}</p>
+                        {/block:Caption}
+                        </center>
+                        </div>
+			</div>
+       </div><!--col-lg-8 end-->
+       {/block:Video}
+       
+       {block:Quote}
+		<div class="col-lg-8 col-lg-offset-2">
+    		<h2 class="text-center post-title">QUOTE</h2>
+        		        <p class="text-center post-date">{block:Date} {Month} {DayOfMonth}, {Year}{/block:Date}</p>
+        		          <hr style="width:50px;border-top:3px solid #606365;margin-bottom:30px;">
+        		        <div class="quote-box">
+            		            <p class="quote">"{Quote}"</p>
+            		        
+            		        {block:Source}
+                                <p>— {Source}</p>
+                            {/block:Source}
+                        </div>
+			</div>
+       </div><!--col-lg-8 end-->
+       {/block:Quote}
+       
+       {block:Chat}
+		<div class="col-lg-8 col-lg-offset-2">
+    		<h2 class="text-center post-title">{block:Title}<a href="{Permalink}">{Title}</a>{/block:Title}</h2>
+        		        <p class="text-center post-date">{block:Date} {Month} {DayOfMonth}, {Year}{/block:Date}</p>
+        		          <hr style="width:50px;border-top:3px solid #606365;margin-bottom:30px;">
+        		           <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}{Line}
+                                </li>
+                            {/block:Lines}
+                        </ul>
+                    </li>
+			</div>
+       </div><!--col-lg-8 end-->
+       {/block:Chat}
+       
+
+                {block:Audio}
+                    <li class="post audio">
+                        {AudioEmbed}{block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+                {/block:Audio}
+                
+          
+                        
+                    </li>
+                {/block:Quote}{block:Link}
+                    <li class="post link">
+                        <a href="{URL}" class="link" {Target}>{Name}</a>
+
+                        {block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}
+                    </li>
+
+       {/block:Posts}
+       
+       <!--Pagination-->     
+       <div class="col-lg-8 col-lg-offset-2">
+			<div class="row">
+				<div class="col-md-12">
+					<hr>
+						<div class="post-date">
+							<a href="#" style="float:left;" class="btnghost">OLDER</a>
+							<a href="#" style="float:right;" class="btnghost">NEWER</a>
+						</div>
+				</div>
+			</div>
+       </div><!--col-lg-8 end-->
+		
+	</div><!--Row end-->
+</div><!--container end-->
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+	<p class="credits">
+		Copyright &copy; Your Website 2015<br/>
+		"Aries" Template by WowThemes.net
+	</p>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="https://jennica819.github.io/aries/js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://jennica819.github.io/aries/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="https://jennica819.github.io/aries/js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="https://jennica819.github.io/aries/js/theme.js"></script>
+</body>
+</html>
