@@ -141,7 +141,7 @@ a:hover,a:focus {
 		 padding:0;
 		border-bottom:1px solid rgba(255,255,255,.3);
 		color:#333;
-			background:#fff;
+			background:#ffd1e6; /*white*/
 	}
 	.navbar-custom.top-nav-collapse a {
 		color:#333;
