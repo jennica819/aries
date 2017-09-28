@@ -278,6 +278,10 @@ a:hover,a:focus {
 	margin-bottom:30px;
 }
 
+.post-margin {
+	margin-bottom: 50px;
+}
+
 /*
 .container {
 	width: 100%;
