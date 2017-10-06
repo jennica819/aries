@@ -275,11 +275,15 @@ a:hover,a:focus {
 .hr-line {
 	width:50px;
 	border-top:3px solid #606365;
-	margin-bottom:100px;
+	margin-bottom:30px;
 }
 
 .post-margin {
 	margin-bottom: 5px;
+}
+
+.margin-post { /*hr*/
+	margin-bottom: 100px;
 }
 
 /*
