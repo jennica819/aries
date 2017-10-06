@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
 		var data = 'name=' + name.val() + '&email=' + email.val() + '&comment='  + encodeURIComponent(comment.val());
 
 		//disabled all the text fields
-		$('.text').attr('disabled','true');
+		//$('.text').attr('disabled','true');
 		
 		//show the loading sign
 		$('.loading').show();
