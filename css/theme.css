@@ -137,7 +137,6 @@ a:hover,a:focus {
 .navbar-custom .nav li.active a:hover {
 	color:#ffb6c1;
 }
-
 @media(min-width:768px) {
 	.navbar-custom {
 		padding:20px 0;
